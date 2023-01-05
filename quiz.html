@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QuizKu!</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style3.css" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" size="32x32" href="media/icon.png" />
+  </head>
+
+  <body>
+    <div id="container">
+      <!--    Start Section     -->
+      <div id="start">Mulai Quiz</div>
+
+      <!--    Guide Section    -->
+      <div id="guide">
+        <h2>Quiz Guide</h2>
+        <h4>1.Kamu Hanya Memiliki 20 Detik Untuk Setiap Pertanyaan.</h4>
+        <h4>2.Setelah Anda Memilih Jawaban Anda. Tidak Dapat Diganti.</h4>
+        <h4>3.Kamu Akan Mendapatkan Poin Berdasarkan Jawaban Benarmu.</h4>
+        <h4>4.Kamu Tidak Dapat Keluar Dari Kuis Saat Anda Bermain.</h4>
+        <div id="button">
+          <button id="exit">Keluar</button>
+          <button id="continue">Lanjut</button>
+        </div>
+      </div>
+
+      <!--    Quiz Section    -->
+      <div id="quiz">
+        <div id="quiz_header">
+          <h5>Quizku!</h5>
+          <div id="timer">
+            <h6>Waktu Tersisa</h6>
+            <h6 id="time">00</h6>
+          </div>
+        </div>
+
+        <!--     Quiz Questions  -->
+
+        <div id="question">
+          <h2 id="questionNo"></h2>
+          <h2 id="questionText"></h2>
+        </div>
+
+        <!--       Quiz Choices   -->
+
+        <div id="optionList">
+          <h4 class="choice_que" id="option1"></h4>
+          <h4 class="choice_que" id="option2"></h4>
+          <h4 class="choice_que" id="option3"></h4>
+          <h4 class="choice_que" id="option4"></h4>
+        </div>
+
+        <!--  Answers Section-->
+
+        <div id="answersSection">
+          <h3 id="total_correct">3 Dari 10 Soal</h3>
+          <h3 id="next_question">Next</h3>
+        </div>
+      </div>
+      <!--   Result Section  -->
+      <div id="result">
+        <i class="fas fa-trophy"></i>
+        <h6>Kamu Menyelesaikan Quiz!</h6>
+        <h6 id="points">Kamu Dapat 4 Dari 10</h6>
+        <a href="home.html" class="button"><article>Keluar Quiz</article></a>
+        <button id="startAgain">Mulai Lagi</button>
+      </div>
+    </div>
+    <script src="soal.js"></script>
+    <script src="scriptquiz.js"></script>
+  </body>
+</html>
