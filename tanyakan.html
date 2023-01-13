@@ -31,11 +31,6 @@
           class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top"
         >
           <div class="container">
-            <div class="loading">
-              <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-            </div>
             <a class="navbar-brand fw-bold fs-4" href="#"
               >Tugas<span class="text-primary">KU!</span></a
             >
@@ -96,11 +91,35 @@
       <div class="card-body">
         <!-- Form tambah data -->
         <div class="container-sm card col-md-8 mt-5">
-          <div class="card-header">Tanyakan Tugasmu</div>
+          <div class="card-header">Tanyakan Tugasmu!</div>
           <div class="card-body">
             <!-- Start Form -->
             <div class="form-floating">
-              <form>
+              <form action="https://formspree.io/f/xayzyrlw" method="POST">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Email Anda</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    name="email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    name="full-name"
+                  />
+                </div>
                 <label for="floatingTextarea2"
                   >Apa Yang Ingin Kamu Tanyakan?</label
                 >
@@ -109,9 +128,10 @@
                   placeholder="Masukkan Pertanyaanmu"
                   id="floatingTextarea2"
                   style="height: 100px"
+                  name="message"
                   required
                 ></textarea>
-                <br />
+                <p><i>* Pertanyaanmu akan dikirim ke email administrator dan akan dijawab melalui email anda.</i></p>
                 <button class="btn">
                   <button type="submit" class="btn btn-primary">
                     <span>Submit</span>
@@ -119,29 +139,61 @@
                 </button>
               </form>
               <!-- End Form -->
-              <div class="container-sm card mt-2 col-md-8">
-                <div class="card-body mt-0">
-                  <!-- table bootstrap -->
-                  <div class="list text-center">Pertanyaanmu</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div
-        id="footer"
-        class="card-footer text-center text-muted navbar-dark bg-dark fixed-bottom"
-      >
-        Mustafid Kaisalana 2022
-      </div>
+      <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://twitter.com/Mustafid_mk"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://www.instagram.com/kaisaalanaa/"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="https://github.com/Mustafid26"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2023 Copyright:
+          <a class="text-white" href="#">Kaisalana 2022</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="script2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f81734a008.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
